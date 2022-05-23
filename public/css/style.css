@@ -1,0 +1,61 @@
+label input[type='file'] {
+	display: none
+}
+
+.appendedImg {
+	height: 150px;
+	width: 150px;
+}
+
+.imgHolder {
+	display: inline-block!important;
+	position: relative;
+	padding: 0.5em;
+	transition: 0.5s
+}
+
+.closeIT_removeImg {
+	padding: 0.3rem 0.5rem;
+	border-radius: 7px;
+	background: red;
+	color: white;
+	position: absolute;
+	top: 0px;
+	right: 2px;
+	cursor: pointer;
+}
+
+#showModelB4Del_removeImg {
+	padding: 10px 50px!important;
+	max-width: 500px;
+	max-height: 300px;
+	background: #edebee;
+	color: black;
+	border: 5px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 99999999999999999999999999999;
+}
+
+.closModalMsg {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	padding: 5px 10px;
+	color: white;
+	background: red;
+	cursor: pointer;
+}
+
+.b4Remove {
+	transform: translateX(600px);
+	opacity: 0.3;
+	background: black!important;
+}

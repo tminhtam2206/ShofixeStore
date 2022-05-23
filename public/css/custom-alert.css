@@ -1,0 +1,59 @@
+.alert{
+    background: #ffdb9b;
+    padding: 8px 14px;
+    min-width: 400px;
+    position: fixed;
+    overflow: hidden;
+    border-left: 8px solid #ffa502;
+    right: 4px;
+    top: 3%;
+    pointer-events: none;
+    box-shadow: 5px 8px 8px #888888;
+}
+
+.alert.showAlert{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.alert.show{
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0%{
+    transform: translateX(100%);
+    }
+    40%{
+    transform: translateX(-10%);
+    }
+    80%{
+    transform: translateX(0%);
+    }
+    100%{
+    transform: translateX(-10px);
+    }
+}
+
+.alert.hide{
+    animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+    0%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.my-custom-input{
+    height: 35px;
+}
